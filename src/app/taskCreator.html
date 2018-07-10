@@ -1,0 +1,42 @@
+<h1>Hello {{name}}</h1>
+
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+<div id="titleHeaderDiv">
+    <div id="title">
+        <span id="tracker">Task Tracker</span><br/>
+        <span id="version">v2.0</span>
+    </div>
+</div>
+<div id="splitter">
+    <table id="tablex">
+        <tr>
+            <td style="width: 50%">
+                <div id="dummyDiv"></div>
+                <div id="createTaskDiv">
+                    <span><h1>Create a Task</h1></span><br/>
+                    <span class="bold">Task Name</span><br/>
+                    <span><input type="text" id="taskName" name="taskName"><br/></span><br/>
+                    <span class="bold">Date</span><br/>
+                    <span><input type="text" id="date" name="date"><br/></span><br/>
+                    <span class="bold">Assigned To</span><br/>
+                    <span><input type="text" id="assigned" name="assigned"></span><br/>
+                    <span class="pull-right"><br/><button id="submit" (click) ="writeTaskToFile()">submit</button></span>
+                </div>
+            </td>
+                    <td style="width: 50%">
+                            <div id="dummyDiv"></div>
+                            <div id="taskDivTable">
+                                    <span><h1>Existing Tasks</h1></span><br/>
+                                    <div id="taskDivInnerTable">
+                                        <table>
+                                            <tr></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
